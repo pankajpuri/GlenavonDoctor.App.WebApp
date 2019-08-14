@@ -1,0 +1,107 @@
+﻿
+<style>
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #2A93C9;
+        font-size: 16px;
+    }
+    .nav navbar-nav > li > a {
+        color: #87cefa;
+        font-size: 16px;
+    }
+   
+    .navbar-inverse .navbar-brand {
+        color: #2A93C9;
+    }
+    #firstNav .btn {
+        color: #fff;
+        font-size: 16px;
+    }
+  
+    #headersNav .navbar, .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border: 0px;
+        border-color: none;
+        border-radius: 0px;
+    }
+
+    #headersNav .nav-tabs {
+        border-bottom: 0px;
+    }
+
+    #firstNav .navbar-nav > li > a {
+        padding: 5px;
+        margin-left: 25px;
+    }
+
+    #firstNav {
+        min-height: 40px;
+    }
+
+        #firstNav .navbar-form {
+            margin-top: 0px;
+            margin-bottom:0px;
+        }
+</style>
+<div id="headersNav">
+    <div id="firstNav" class="navbar nav-tabs  navbar-inverse " style="background-color:#2A93C9;margin-bottom:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" style="float:left;">
+                    <ul class="nav navbar-nav" style="padding-top:5px;padding-bottom:5px;">
+                        <li>
+                            <a style="color: #fff;" href="mailto:contact@glenavongp.com">contact@buyitexpress.com</a>
+                        </li>
+                        <li>
+                            <a style="color: #fff;" href="tel:01234578"> (+64) 09-828 6438</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" style="float:right; padding-left:0px;">
+                    <a href="#" class="btn btn-md ">
+                        Register
+                    </a>
+                    <span>|</span>
+                    <a href="#" class="btn ">
+                        Login
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="navbar navbar-inverse " style="background-color:#87cefa;margin-bottom:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="navbar-header">
+                        <button type="button" style="color:#2A93C9;" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("Logo", "Index", "Home", null, new { @class = "navbar-brand" })
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div id="secondNav" class="navbar-collapse collapse" style="font-family:sans-serif;font-weight:400!important;">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Services", "Services", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Career", "Career", "Home")</li>
+                            <li>@Html.ActionLink("Appointment", "Appointment", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Patient", "Patient", "Home")</li>
+                            <li>@Html.ActionLink("Employees", "Employees", "Home")</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
